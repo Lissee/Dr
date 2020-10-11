@@ -21,7 +21,9 @@ int main() {
             Y = Y + rand() % 5 + (-1);
             R = sqrt(X * X + Y * Y);
             cout << "X=" << X << " Y=" << Y << " R=" << R;
-            Result = Result + 5;
+            if (R > 1) {
+                Result = Result + 4;
+            } else Result = Result + 5;
             cout << "Result: " << Result << endl;
 
 
