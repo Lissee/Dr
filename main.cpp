@@ -5,10 +5,12 @@ using namespace std;
 
 int main() {
     int X, Y;
-   cout << "Hello"<<endl;
+    double R;
+   cout << "Введите координаты X и Y"<<endl;
    cin >> X;
    cin >> Y;
-   cout <<"X="<<X<<" Y="<<Y;
+   R=sqrt(X*X + Y*Y);
+   cout <<"X="<<X<<" Y="<<Y<<" R="<<R;
     return 0;
 
 }
