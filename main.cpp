@@ -21,7 +21,15 @@ int main() {
             Y = Y + rand() % 5 + (-1);
             R = sqrt(X * X + Y * Y);
             cout << "X=" << X << " Y=" << Y << " R=" << R;
-            if (R > 1) {
+            //Считаем колличество баллов
+            if (R > 5) {
+            } else if (R > 4) {
+                Result = Result + 1;
+            } else if (R > 3) {
+                Result = Result + 2;
+            } else if (R > 2) {
+                Result = Result + 3;
+            } else if (R > 1) {
                 Result = Result + 4;
             } else Result = Result + 5;
             cout << "Result: " << Result << endl;
