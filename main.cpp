@@ -4,8 +4,8 @@
 using namespace std;
 
 int main() {
-    int X, Y;
-    bool check_k;
+    int X, Y, Result =0;
+    bool check_k = true;
     double R;
    cout << "Введите координаты X и Y"<<endl;
    cin >> X;
@@ -24,7 +24,14 @@ int main() {
             Y = Y + rand() % 5 + (-1);
             R = sqrt(X * X + Y * Y);
             cout << "X=" << X << " Y=" << Y << " R=" << R;
-        }
+            Result = Result + 5;
+            cout << "Result: " << Result << endl;
+
+
+//Выводим результат
+cout << "Result: " << Result;
+
+}
     }
     return 0;
 
