@@ -41,10 +41,13 @@ int main() {
                 } else Result = Result + 5;
                 cout << "Result: " << Result << endl;
             }
-//Выводим результат
-            cout << "Result: " << Result;
         }
     }
+//Выводим результат
+if (check_k == true) {
+    if (Result < 10) {
+        cout << "Lose! Result: " << Result;
+    } else cout << "Win! Result: " << Result;
+}
     return 0;
-
 }
